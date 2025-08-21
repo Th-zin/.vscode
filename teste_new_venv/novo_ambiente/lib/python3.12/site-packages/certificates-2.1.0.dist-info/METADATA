@@ -1,0 +1,58 @@
+Metadata-Version: 2.3
+Name: certificates
+Version: 2.1.0
+Summary: Generate event certificates easily.
+License: Apache-2.0
+Author: cassiobotaro
+Author-email: cassiobotaro@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Project-URL: Homepage, https://github.com/cassiobotaro/certificates
+Description-Content-Type: text/markdown
+
+#  Certificates
+
+Generate event certificates easily.
+
+## Requirements
+
+* Inkscape (`apt install inkscape`)
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install certificates.
+
+```bash
+pip install certificates
+```
+
+## Usage
+
+`certificates participants.csv template.svg`
+
+```
+usage: certificates [-h] [--output OUTPUT] participants template
+
+positional arguments:
+  participants          csv filaname containing participants
+  template              certificate template in svg format used to build
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --output OUTPUT, -o OUTPUT
+                        destination of the generated certificates
+```
+
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+## License
+[Apache 2.0](https://choosealicense.com/licenses/apache-2.0/)
+

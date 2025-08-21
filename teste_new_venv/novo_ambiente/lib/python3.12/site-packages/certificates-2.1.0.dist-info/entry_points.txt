@@ -1,0 +1,3 @@
+[console_scripts]
+certificates=certificates.__main__:main
+

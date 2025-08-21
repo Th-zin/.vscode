@@ -1,0 +1,14 @@
+# Ignorar pastas de ambiente virtual
+venv/
+*.venv/
+my_venv/      # Se você usou my_venv como nome
+my_new_venv/  # Se você usou my_new_venv como nome
+
+# Ignorar arquivos de cache e metadados específicos do Python
+__pycache__/
+*.pyc
+*.pyd
+.Python/
+
+# Ignorar arquivos gerados por IDEs (opcional, mas comum)
+.vscode/ # Ignorar a pasta .vscode se contiver configurações locais que não devem ser compartilhadas
