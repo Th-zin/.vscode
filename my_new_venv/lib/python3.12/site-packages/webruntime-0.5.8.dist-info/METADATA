@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: webruntime
+Version: 0.5.8
+Summary: Launch HTML5 apps in the browser or a desktop-like runtime.
+Home-page: http://webruntime.readthedocs.io
+Author: Almar Klein and contributors
+Author-email: almar.klein@gmail.com
+License: (new) BSD
+Download-URL: https://pypi.python.org/pypi/webruntime
+Keywords: GUI,web,runtime,XUL,nwjs
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Provides: webruntime
+Requires-Dist: dialite
+
+
+The webruntime module can be used to launch applications based on
+HTML/JS/CSS. This can be a browser or a runtime that looks like a
+desktop app, such as XUL (based on Firefox) or NW.js.
+
+Example:
+
+.. code-block:: python
+
+    >>> from webruntime import launch
+    >>> rt = launch('http://xkcd.com', 'app')
+    ...
+    >>> rt.close()
+
+
+

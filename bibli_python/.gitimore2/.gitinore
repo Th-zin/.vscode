@@ -9,6 +9,11 @@ __pycache__/
 *.pyc
 *.pyd
 .Python/
+*.o                # Arquivos objeto
 
+# Arquivos Executáveis e Binários (Geral)
+# Arquivos gerados no processo de build que não são o código-fonte
+*.exe              # Arquivos executáveis do Windows (como seu media.exe)
+*.dll              # Bibliotecas dinâmicas
 # Ignorar arquivos gerados por IDEs (opcional, mas comum)
 .vscode/ # Ignorar a pasta .vscode se contiver configurações locais que não devem ser compartilhadas

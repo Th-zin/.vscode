@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: dialite
+Version: 0.6.0
+Summary: Lightweight Python library to show simple dialogs
+Keywords: GUI,dialog,lightweight
+Author: Almar Klein
+Requires-Python: >= 3.6
+Description-Content-Type: text/markdown
+Requires-Dist: dialite[lint,tests, docs] ; extra == "dev"
+Requires-Dist: sphinx ; extra == "docs"
+Requires-Dist: ruff ; extra == "lint"
+Requires-Dist: pytest ; extra == "tests"
+Project-URL: Documentation, http://dialite.readthedocs.io
+Project-URL: Homepage, https://github.com/flexxui/dialite
+Project-URL: Repository, https://github.com/flexxui/dialite
+Provides-Extra: dev
+Provides-Extra: docs
+Provides-Extra: lint
+Provides-Extra: tests
+
+# Dialite
+
+![CI](https://github.com/flexxui/dialite/workflows/CI/badge.svg)
+[![Documentation Status](https://readthedocs.org/projects/dialite/badge/?version=latest)](https://dialite.readthedocs.org)
+
+Dialite is a lightweight Python package to show dialogs. It provides a
+handful of functions, each a verb, that can be used to `inform()`, `warn()`
+or `fail()` the user, or to `ask_ok()`, `ask_retry()` or `ask_yesno()`.
+
+Dialite is pure Python, has no dependencies, and is written to work on
+Python 3.6+. It works on Windows (from at least XP), Linux
+(most ones anyway, including Raspbian) and OS X.
+
+Dialite provides a way to communicate with the user without needing a fancy
+(and heavy) GUI library. It's also much easier to package with tools like
+cx_Freeze and PyInstaller.
+
+
+## Example:
+
+```py
+import dialite
+
+res = dialite.ask_yesno('Troll question', 'Do you prefer VI over Emacs?')
+
+if dialite.ask_ok('Confirm download', 'Will now download the resources.'):
+    ...
+```
+
+
+## Installation
+
+`pip install dialite`
+
+
+## License
+
+BSD 2-clause. See LICENSE for details.
+

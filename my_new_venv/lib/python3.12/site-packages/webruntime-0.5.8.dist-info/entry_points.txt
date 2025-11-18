@@ -1,0 +1,3 @@
+[console_scripts]
+webruntime = webruntime.__main__:main
+

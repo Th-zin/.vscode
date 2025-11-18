@@ -1,0 +1,3 @@
+[console_scripts]
+flexx = flexx.__main__:main
+
