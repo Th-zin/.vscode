@@ -1,19 +1,55 @@
-# Ignorar pastas de ambiente virtual
+# ---------------------------------------------------
+# 1. AMBIENTES VIRTUAIS (venv)
+# ---------------------------------------------------
+# Ignora pastas de ambiente virtual, que são específicas de cada máquina
 venv/
-*.venv/
-my_venv/      # Se você usou my_venv como nome
-my_new_venv/  # Se você usou my_new_venv como nome
+.venv/
+env/
+.env/
 
-# Ignorar arquivos de cache e metadados específicos do Python
+# ---------------------------------------------------
+# 2. CACHE, COMPILADOS E BYTECODE (Python)
+# ---------------------------------------------------
+# Ignora a pasta de cache do Python (bytecode compilado)
 __pycache__/
+
+# Arquivos de bytecode compilado e binários temporários
 *.pyc
 *.pyd
-.Python/
-*.o                # Arquivos objeto
+*.so
+*.o
 
-# Arquivos Executáveis e Binários (Geral)
-# Arquivos gerados no processo de build que não são o código-fonte
-*.exe              # Arquivos executáveis do Windows (como seu media.exe)
-*.dll              # Bibliotecas dinâmicas
-# Ignorar arquivos gerados por IDEs (opcional, mas comum)
-.vscode/ # Ignorar a pasta .vscode se contiver configurações locais que não devem ser compartilhadas
+# ---------------------------------------------------
+# 3. ARQUIVOS DE BUILD E EXECUÇÃO
+# ---------------------------------------------------
+# Ignora binários gerados pelo sistema operacional
+*.exe         # Executáveis do Windows
+*.dll         # Bibliotecas dinâmicas do Windows
+*.out         # Saída de compiladores
+build/
+dist/
+
+# ---------------------------------------------------
+# 4. PACOTES E INSTALAÇÃO (PIP)
+# ---------------------------------------------------
+# Arquivos gerados durante a instalação de pacotes Python
+.Python
+pip-selfcheck.json
+htmlcov/      # Cobertura de teste (Coverage)
+.tox/         # Testes Tox
+.pytest_cache/
+
+# ---------------------------------------------------
+# 5. FERRAMENTAS E IDE's (VS Code)
+# ---------------------------------------------------
+# Configurações de IDE específicas do usuário (geralmente .vscode/settings.json)
+.vscode/
+.idea/        # Configurações do PyCharm / IntelliJ
+
+# ---------------------------------------------------
+# 6. ARQUIVOS DO SISTEMA OPERACIONAL
+# ---------------------------------------------------
+
+# Arquivos de cache e metadados do Windows
+Thumbs.db
+
